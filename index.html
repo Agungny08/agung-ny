@@ -6,6 +6,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
 
   <style>
+    /* Custom Animations */
     .animate-slow-ping {
       animation: smooth-ping 2s infinite ease-in-out;
     }
@@ -14,46 +15,94 @@
       50% { transform: scale(1.4); opacity: 0.7; }
       100% { transform: scale(1.6); opacity: 0; }
     }
+
+    /* New gradient text */
     .gradient-text {
-      background: linear-gradient(45deg, #9b59b6, #8e44ad, #5e2a8c);
+      background: linear-gradient(45deg, #6a1b9a, #8e24aa, #4a148c);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      text-shadow: 0 0 5px rgba(148, 0, 211, 0.8);
+      text-shadow: 0 0 8px rgba(255, 0, 255, 0.8);
     }
+
+    /* Elegant background and text colors */
     .bg-purple-dark {
-      background-color: #3c1361;
+      background-color: #4A148C;
     }
     .text-purple-light {
       color: #9b59b6;
     }
     .bg-black-light {
-      background-color: #1e1e1e;
+      background-color: #212121;
     }
     .bg-purple-glow {
       background: linear-gradient(45deg, #8e44ad, #9b59b6);
-      box-shadow: 0 0 10px rgba(148, 0, 211, 0.8);
+      box-shadow: 0 0 15px rgba(148, 0, 211, 0.8);
+    }
+    /* Fade-in animation for elements */
+    .fade-in {
+      animation: fadeIn 1.5s ease-out;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    /* Hover effects */
+    .hover-bg-purple:hover {
+      background-color: #9b59b6;
+      transform: scale(1.05);
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .hover-glow:hover {
+      box-shadow: 0 0 15px rgba(255, 0, 255, 0.9);
+    }
+
+    /* Loading bar animation */
+    .loading-bar-container {
+      width: 100%;
+      height: 4px;
+      background-color: #e0e0e0;
+      position: absolute;
+      top: 90%;
+      left: 0;
+      z-index: 10;
+    }
+
+    .loading-bar {
+      width: 0%;
+      height: 100%;
+      background-color: #9b59b6;
+      animation: load 3s infinite linear;
+    }
+
+    @keyframes load {
+      0% { width: 0%; }
+      50% { width: 50%; }
+      100% { width: 100%; }
     }
   </style>
 </head>
 <body class="bg-black-light flex flex-col min-h-screen text-purple-light">
-  <header class="relative bg-purple-glow text-white flex items-center justify-center py-4">
+  <header class="relative bg-purple-glow text-white flex items-center justify-center py-4 fade-in">
     <a href="https://vchatsz.web.app" class="absolute left-4 p-2 rounded-full bg-transparent flex items-center">
-      <i class="fas fa-comment-dots text-white text-3xl"></i>
+      <i class="fas fa-comment-dots text-white text-3xl hover-glow"></i>
     </a>
     <h1 class="text-5xl font-bold">
       Agung-<span class="gradient-text">ny</span>
     </h1>
   </header>
   <main class="flex-grow">
-    <section class="flex flex-col items-center mt-6">
+    <section class="flex flex-col items-center mt-6 fade-in">
       <div class="relative w-32 h-32 rounded-full border-4 border-purple-400 overflow-hidden">
         <img src="https://files.catbox.moe/0nyzhh.jpg" alt="Profile" class="w-full h-full object-cover">
       </div>
-      <a href="https://wa.me/62881027377047" class="mt-4 bg-purple-500 text-white px-6 py-2 rounded-lg font-semibold">
+      <a href="https://wa.me/62881027377047" class="mt-4 bg-purple-500 text-white px-6 py-2 rounded-lg font-semibold hover-bg-purple">
         Contact
       </a>
     </section>
-    <section class="mt-10 px-4">
+    <section class="mt-10 px-4 fade-in">
       <div class="relative">
         <h2 class="text-center text-xl font-bold mb-4 relative z-10">Personal Information</h2>
         <div class="absolute inset-x-0 top-1/2 -translate-y-1/2 bg-purple-100/60 rounded-full h-10 z-0"></div>
@@ -74,7 +123,7 @@
       </div>
     </section>
     <hr class="my-8 border-black">
-    <section class="px-4">
+    <section class="px-4 fade-in">
       <div class="relative">
         <h2 class="text-center text-xl font-bold mb-4 relative z-10">Coding Skills</h2>
         <div class="absolute inset-x-0 top-1/2 -translate-y-1/2 bg-purple-100/60 rounded-full h-10 z-0"></div>
@@ -110,7 +159,7 @@
       </div>
     </section>
     <hr class="my-8 border-black">
-    <section class="px-4 mb-16">
+    <section class="px-4 mb-16 fade-in">
       <h2 class="text-center text-xl font-bold mb-4">Thanks to</h2>
       <div class="flex justify-center space-x-6">
         <div class="flex items-center space-x-2">
@@ -133,5 +182,11 @@
       <i class="fas fa-code"></i> 2024 Agungny - All Rights Reserved
     </p>
   </footer>
+
+  <!-- Loading Bar -->
+  <div class="loading-bar-container">
+    <div class="loading-bar"></div>
+  </div>
+
 </body>
 </html>
