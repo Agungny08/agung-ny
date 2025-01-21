@@ -1,115 +1,201 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Profile</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(to bottom, #83a4d4, #b6fbff);
-            color: #333;
-        }
-        .container {
-            width: 90%;
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
-            background: #fff;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-            animation: fadeIn 1.2s ease;
-        }
-        h1 {
-            text-align: center;
-            color: #333;
-        }
-        .profile-pic {
-            display: block;
-            margin: 20px auto;
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid #007BFF;
-        }
-        .info {
-            text-align: center;
-            margin: 20px 0;
-        }
-        .info p {
-            margin: 5px 0;
-            font-size: 16px;
-        }
-        .social-links {
-            text-align: center;
-            margin: 30px 0;
-        }
-        .social-links a {
-            display: inline-block;
-            margin: 0 15px;
-            padding: 10px 20px;
-            text-decoration: none;
-            font-size: 16px;
-            color: #fff;
-            border-radius: 8px;
-            transition: background-color 0.3s ease;
-        }
-        .social-links a.instagram {
-            background-color: #E4405F;
-        }
-        .social-links a.instagram:hover {
-            background-color: #c73550;
-        }
-        .social-links a.whatsapp {
-            background-color: #25D366;
-        }
-        .social-links a.whatsapp:hover {
-            background-color: #1da756;
-        }
-        footer {
-            text-align: center;
-            margin-top: 20px;
-            font-size: 14px;
-            color: #777;
-        }
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-    </style>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Herta - Chan</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        />
+    </head>
+    <body>
+        <div class="hamburger-menu">
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <div class="menu-content" id="menu">
+                <div class="menu-close" id="menu-close">&times;</div>
+                <h3>Follow Us</h3>
+                <a href="https://www.tiktok.com/@chopgt" target="_blank">
+                    <i class="fab fa-tiktok"></i> TikTok
+                </a>
+                <a
+                    href="https://www.instagram.com/sanzhost.id/"
+                    target="_blank"
+                >
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a
+                    href="https://wa.me/6281401689098?text=Halo+min"
+                    target="_blank"
+                >
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+                <p>&copy; 2024 SanzOnly</p>
+            </div>
+        </div>
+        <div class="header">
+            <h1>
+                Herta <span>Chan</span>
+                <span class="verified-badge">
+                    <img
+                        src="https://files.catbox.moe/9s1uk1.png"
+                        alt="Verified Badge"
+                    />
+                </span>
+            </h1>
+        </div>
+        <div class="container">
+            <div class="main-content">
+                <div class="badge">BOT WHATSAPP TERBAIK NO #1</div>
+                <h2>Teman Cerdas di <span>WhatsApp</span>-mu</h2>
+                <p>
+                    Asisten pribadi yang cerdas, praktis, dan selalu siap sedia
+                    HERTA CHAN siap membantu Anda mengelola pekerjaan dan
+                    kehidupan sosial lebih baik. Coba hari ini, dan nikmati
+                    kemudahan dalam genggaman tangan!
+                </p>
+                <a
+                    href="https://whatsapp.com/channel/0029VafEhDUIXnlyGgMSgH2u/494"
+                    class="cta-button"
+                    ><i class="fas fa-comment-dots"></i> Coba Sekarang</a
+                >
+                <a
+                    href="https://whatsapp.com/channel/0029VafEhDUIXnlyGgMSgH2u"
+                    class="cta-button"
+                    ><i class="fas fa-comment"></i> Join Saluran</a
+                >
+            </div>
+            <div class="features">
+                <h3>Our Features</h3>
+                <div class="feature-item">
+                    <i class="fas fa-gamepad"></i>
+                    <h4>RPG & Game</h4>
+                    <p>play together and chase the leaderboard</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-comments"></i>
+                    <h4>Private Chat</h4>
+                    <p>
+                        Explore the power of private chat with seamless
+                        performance.
+                    </p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-brain"></i>
+                    <h4>AI</h4>
+                    <p>Explore the power of AI with seamless performance.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-exchange-alt"></i>
+                    <h4>Convert</h4>
+                    <p>
+                        Explore the power of convert with seamless performance.
+                    </p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-download"></i>
+                    <h4>Downloader</h4>
+                    <p>
+                        Explore the power of downloader with seamless
+                        performance.
+                    </p>
+                </div>
+            </div>
+            <div class="about">
+                <h3>TENTANG HERTA - CHAN</h3>
+                <h3>Teman Digital Pintar di WhatsApp!</h3>
+                <p>
+                    HERTA - CHAN hadir untuk mempermudah setiap langkah
+                    harianmu! Mulai dari mengelola pekerjaan hingga obrolan
+                    santai, semuanya bisa kamu lakukan lebih cepat dan efisien.
+                    Dengan kemampuan chat cerdasnya, HERTA - CHAN siap menjadi
+                    asisten pribadi yang mengatur semuanya dengan mudah, membuat
+                    hidupmu lebih ringan, dan lebih produktif setiap hari.
+                    Nikmati pengalaman yang lebih praktis, hanya dalam genggaman
+                    tangan!
+                </p>
+                <p>
+                    Dapat diakses kapan saja, dengan layanan yang selalu aktif
+                    24/7, HERTA - CHAN siap memenuhi berbagai kebutuhanmu di
+                    mana pun dan kapan pun.
+                </p>
+            </div>
+            <div class="impact">
+                <h3>Our Impact</h3>
+                <div class="impact-item">
+                    <i class="fas fa-users"></i>
+                    <h4>1.592</h4>
+                    <p>Active Users</p>
+                </div>
+                <div class="impact-item">
+                    <i class="fas fa-user-friends"></i>
+                    <h4>32</h4>
+                    <p>Total Groups</p>
+                </div>
+                <div class="impact-item">
+                    <i class="fas fa-paper-plane"></i>
+                    <h4>235.627</h4>
+                    <p>Messages Sent</p>
+                </div>
+                <div class="impact-item">
+                    <i class="fas fa-comments"></i>
+                    <h4>2</h4>
+                    <p>Community</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-bottom">
+                &copy; 2024 Herta-Chan. Design By SanzOnly.
+            </div>
+        </div>
+        <!-- Scripts -->
+        <script>
+            // Ambil elemen yang dibutuhkan
+            const menuToggle = document.getElementById("menu-toggle");
+            const menuContent = document.querySelector(".menu-content");
+            const menuClose = document.getElementById("menu-close");
 
-<div class="container">
-    <h1>Welcome to My Profile</h1>
-    <img src="https://files.catbox.moe/ph05x4.jpg" alt="Profile Picture" class="profile-pic">
-    
-    <div class="info">
-        <p><strong>Name:</strong> Moch Agung Nur Yusuf</p>
-        <p><strong>Email:</strong> harisbima715@gmail.com</p>
-        <p><strong>Date of Birth:</strong> Agustus 08, 2007</p>
-        <p><strong>Location:</strong> Sidoarjo, Jawa Timur</p>
-        <p><strong>About Me:</strong> I am a web developer with a passion for creating beautiful and functional websites.</p>
-    </div>
+            // Tambahkan event listener untuk toggle menu
+            menuToggle.addEventListener("change", () => {
+                if (menuToggle.checked) {
+                    menuContent.style.right = "0"; // Geser menu ke dalam layar
+                    menuContent.style.visibility = "visible";
+                    menuContent.style.opacity = "1";
+                } else {
+                    menuContent.style.right = "-250px"; // Geser menu ke luar layar
+                    menuContent.style.visibility = "hidden";
+                    menuContent.style.opacity = "0";
+                }
+            });
 
-    <div class="social-links">
-        <a href="https://instagram.com/gungny_08" target="_blank" class="instagram">Instagram</a>
-        <a href="https://wa.me/62881027377047" target="_blank" class="whatsapp">WhatsApp</a>
-    </div>
-</div>
+            // Tambahkan event listener untuk tombol "Close"
+            menuClose.addEventListener("click", () => {
+                menuToggle.checked = false; // Hilangkan centang pada checkbox
+                menuContent.style.right = "-250px"; // Geser menu keluar layar
+                menuContent.style.visibility = "hidden";
+                menuContent.style.opacity = "0";
+            });
 
-<footer>
-    <p>&copy; 2025 Agung Ny. All rights reserved.</p>
-</footer>
-
-</body>
+            // Tutup menu saat mengklik di luar menu
+            document.addEventListener("click", event => {
+                if (
+                    !menuContent.contains(event.target) &&
+                    !menuToggle.contains(event.target)
+                ) {
+                    menuToggle.checked = false; // Hilangkan centang pada checkbox
+                    menuContent.style.right = "-250px"; // Geser menu keluar layar
+                    menuContent.style.visibility = "hidden";
+                    menuContent.style.opacity = "0";
+                }
+            });
+        </script>
+    </body>
 </html>
