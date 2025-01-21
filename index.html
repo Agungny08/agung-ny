@@ -81,6 +81,49 @@
       50% { width: 50%; }
       100% { width: 100%; }
     }
+
+    /* Personal Information & Coding Skills Section Fix */
+    .section-heading {
+      background: linear-gradient(45deg, #6a1b9a, #8e24aa, #4a148c);
+      -webkit-background-clip: text;
+      color: transparent;
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+    }
+
+    /* Section Specific Styling */
+    .info-section, .skills-section {
+      background-color: #4A148C;
+      color: white;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .info-section h2, .skills-section h2 {
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #9b59b6;
+    }
+
+    /* Ensure proper gradient and consistent color across sections */
+    .personal-info-item, .coding-skill-item {
+      margin: 10px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .personal-info-item span, .coding-skill-item span {
+      color: #9b59b6;
+      font-weight: 600;
+    }
+
+    /* Additional custom gradient styling */
+    .bg-gradient {
+      background: linear-gradient(135deg, #8e44ad, #9b59b6);
+    }
   </style>
 </head>
 <body class="bg-black-light flex flex-col min-h-screen text-purple-light">
@@ -101,62 +144,44 @@
         Contact
       </a>
     </section>
-    <section class="mt-10 px-4 fade-in">
-      <div class="relative">
-        <h2 class="text-center text-xl font-bold mb-4 relative z-10">Personal Information</h2>
-        <div class="absolute inset-x-0 top-1/2 -translate-y-1/2 bg-purple-100/60 rounded-full h-10 z-0"></div>
+
+    <!-- Personal Information Section -->
+    <section class="info-section fade-in">
+      <h2>Personal Information</h2>
+      <div class="personal-info-item">
+        <span>Makan</span>
       </div>
-      <div class="flex justify-around items-center space-x-4">
-        <div class="flex flex-col items-center">
-          <i class="fas fa-wallet text-purple-400"></i>
-          <span>Makan</span>
+      <div class="personal-info-item">
+        <span>Tidur</span>
+      </div>
+      <div class="personal-info-item">
+        <span>Bangun</span>
+      </div>
+    </section>
+
+    <!-- Coding Skills Section -->
+    <section class="skills-section fade-in">
+      <h2>Coding Skills</h2>
+      <div class="coding-skill-item">
+        <span>JavaScript</span>
+        <div class="w-full bg-gray-200 rounded-full h-2 mt-2">
+          <div class="bg-purple-400 h-2 rounded-full" style="width: 82%;"></div>
         </div>
-        <div class="flex flex-col items-center">
-          <i class="fas fa-code text-purple-400"></i>
-          <span>Tidur</span>
+      </div>
+      <div class="coding-skill-item">
+        <span>CSS</span>
+        <div class="w-full bg-gray-200 rounded-full h-2 mt-2">
+          <div class="bg-purple-400 h-2 rounded-full" style="width: 24%;"></div>
         </div>
-        <div class="flex flex-col items-center">
-          <i class="fas fa-user text-purple-400"></i>
-          <span>Bangun</span>
+      </div>
+      <div class="coding-skill-item">
+        <span>HTML</span>
+        <div class="w-full bg-gray-200 rounded-full h-2 mt-2">
+          <div class="bg-purple-400 h-2 rounded-full" style="width: 19%;"></div>
         </div>
       </div>
     </section>
-    <hr class="my-8 border-black">
-    <section class="px-4 fade-in">
-      <div class="relative">
-        <h2 class="text-center text-xl font-bold mb-4 relative z-10">Coding Skills</h2>
-        <div class="absolute inset-x-0 top-1/2 -translate-y-1/2 bg-purple-100/60 rounded-full h-10 z-0"></div>
-      </div>
-      <div class="space-y-4">
-        <div>
-          <div class="flex items-center space-x-2">
-            <i class="fab fa-js text-purple-400"></i>
-            <span>JavaScript</span>
-          </div>
-          <div class="w-full bg-gray-200 rounded-full h-2 mt-2">
-            <div class="bg-purple-400 h-2 rounded-full" style="width: 82%;"></div>
-          </div>
-        </div>
-        <div>
-          <div class="flex items-center space-x-2">
-            <i class="fab fa-css3-alt text-purple-400"></i>
-            <span>CSS</span>
-          </div>
-          <div class="w-full bg-gray-200 rounded-full h-2 mt-2">
-            <div class="bg-purple-400 h-2 rounded-full" style="width: 24%;"></div>
-          </div>
-        </div>
-        <div>
-          <div class="flex items-center space-x-2">
-            <i class="fab fa-html5 text-purple-400"></i>
-            <span>HTML</span>
-          </div>
-          <div class="w-full bg-gray-200 rounded-full h-2 mt-2">
-            <div class="bg-purple-400 h-2 rounded-full" style="width: 19%;"></div>
-          </div>
-        </div>
-      </div>
-    </section>
+
     <hr class="my-8 border-black">
     <section class="px-4 mb-16 fade-in">
       <h2 class="text-center text-xl font-bold mb-4">Thanks to</h2>
@@ -176,6 +201,8 @@
       </div>
     </section>
   </main>
+
+  <!-- Footer Section -->
   <footer class="bg-purple-500 text-white text-center py-4">
     <p class="text-sm font-medium tracking-wide">
       <i class="fas fa-code"></i> 2024 Agungny - All Rights Reserved
