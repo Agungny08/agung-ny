@@ -1,0 +1,117 @@
+/* Gradient Text */
+.gradient-text {
+  background: linear-gradient(90deg, #6a1b9a, #8e24aa, #4a148c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Header Background */
+.header-bg {
+  background: linear-gradient(135deg, #4a148c, #8e24aa, #6a1b9a);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Button Style */
+.button-style {
+  background: linear-gradient(90deg, #6a1b9a, #8e24aa);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.button-style:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(108, 70, 200, 0.5);
+}
+
+/* Card Style */
+.card {
+  background: #2a2a2a;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Progress Bar */
+.progress-bar {
+  height: 10px;
+  border-radius: 5px;
+  background: #4a148c;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #6a1b9a, #8e24aa);
+  animation: fillProgress 2s ease-in-out;
+}
+
+@keyframes fillProgress {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Loading Bar */
+.loading-bar-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #ddd;
+  z-index: 9999;
+}
+
+.loading-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #6a1b9a, #8e24aa);
+  animation: loadingAnimation 2s infinite;
+}
+
+@keyframes loadingAnimation {
+  0% { width: 0%; }
+  50% { width: 50%; }
+  100% { width: 100%; }
+}
+
+/* Section Title */
+.section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #8e24aa;
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #6a1b9a, #8e24aa);
+  margin: 10px auto;
+  border-radius: 2px;
+}
+
+/* Smooth Fade-in Animation */
+.fade-in {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
