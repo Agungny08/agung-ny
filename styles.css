@@ -7,6 +7,13 @@ body {
   color: #ffffff;
 }
 
+/* Header Background */
+.header-bg {
+  background: linear-gradient(135deg, #4a148c, #8e24aa, #6a1b9a);
+  padding: 20px;
+  animation: fadeInScale 1.5s ease-in-out;
+}
+
 /* Gradient Text */
 .gradient-text {
   background: linear-gradient(90deg, #6a1b9a, #8e24aa, #4a148c);
@@ -15,53 +22,19 @@ body {
   animation: gradientFlow 3s infinite alternate;
 }
 
-/* Header Background */
-.header-bg {
-  background: linear-gradient(135deg, #4a148c, #8e24aa, #6a1b9a);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-  padding: 20px;
-  animation: fadeInScale 1.5s ease-in-out;
-}
-
-/* Button Style */
-.button-style {
-  background: linear-gradient(90deg, #6a1b9a, #8e24aa);
-  color: white;
-  padding: 10px 20px;
-  border-radius: 8px;
-  font-weight: bold;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.button-style:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(108, 70, 200, 0.5);
-  animation: buttonPulse 1.5s infinite;
-}
-
-/* Card Style */
-.card {
-  background: #2a2a2a;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  animation: fadeInSlide 1.5s ease-in-out;
-}
-
 /* Skill Bar Section */
 .skill-item {
   margin-bottom: 20px;
   position: relative;
   text-align: left;
-  color: #fff;
-  animation: fadeInScale 1s ease-in-out;
+  animation: fadeInSlide 1.5s ease-in-out;
 }
 
 .skill-item p {
   font-size: 1rem;
   font-weight: bold;
   margin-bottom: 8px;
-  color: #8e24aa;
+  color: #ffffff;
   animation: textFadeIn 1.5s ease-in-out;
 }
 
@@ -73,7 +46,6 @@ body {
   border-radius: 10px;
   overflow: hidden;
   position: relative;
-  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.4);
   animation: barFadeIn 1.5s ease-in-out;
 }
 
@@ -104,28 +76,27 @@ body {
   transform: translateY(-50%);
   font-size: 0.9rem;
   font-weight: bold;
-  color: #fff;
+  color: #ffffff;
   background: linear-gradient(90deg, #4a148c, #8e24aa);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textSlideIn 1.5s ease-in-out;
 }
 
-/* Loading Bar */
-.loading-bar-container {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background: #ddd;
-  z-index: 9999;
+/* Button Style */
+.button-style {
+  background: linear-gradient(90deg, #6a1b9a, #8e24aa);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.loading-bar {
-  height: 100%;
-  background: linear-gradient(90deg, #6a1b9a, #8e24aa);
-  animation: loadingAnimation 2s infinite;
+.button-style:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(108, 70, 200, 0.5);
+  animation: pulse 1.5s infinite;
 }
 
 /* Animations */
@@ -141,11 +112,11 @@ body {
 @keyframes fadeInSlide {
   from {
     opacity: 0;
-    transform: translateX(-20px);
+    transform: translateY(-20px);
   }
   to {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 
@@ -182,15 +153,6 @@ body {
   }
 }
 
-@keyframes progressFill {
-  from {
-    width: 0%;
-  }
-  to {
-    width: var(--skill-width);
-  }
-}
-
 @keyframes fadeInScale {
   from {
     opacity: 0;
@@ -202,45 +164,11 @@ body {
   }
 }
 
-@keyframes buttonPulse {
+@keyframes pulse {
   0%, 100% {
     transform: scale(1);
   }
   50% {
     transform: scale(1.05);
   }
-}
-
-@keyframes loadingAnimation {
-  0% {
-    width: 0%;
-  }
-  50% {
-    width: 50%;
-  }
-  100% {
-    width: 100%;
-  }
-}
-
-/* Section Title */
-.section-title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #8e24aa;
-  text-align: center;
-  margin-bottom: 20px;
-  position: relative;
-  animation: fadeInSlide 1.5s ease-in-out;
-}
-
-.section-title::after {
-  content: '';
-  display: block;
-  width: 80px;
-  height: 4px;
-  background: linear-gradient(90deg, #6a1b9a, #8e24aa);
-  margin: 10px auto;
-  border-radius: 2px;
-  animation: barFadeIn 1.5s ease-in-out;
 }
