@@ -8,17 +8,42 @@
   <!-- Font Awesome CDN for icons -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <title>Profile - Agungny</title>
+  <style>
+    /* Add animations for fade-in */
+    .fade-in {
+      animation: fadeIn 1s ease-out;
+    }
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    /* Customize progress bar */
+    .progress-bar {
+      background-color: #4c1d95;
+      border-radius: 5px;
+    }
+    .progress-fill {
+      background-color: #9b4eac;
+      height: 100%;
+      border-radius: 5px;
+    }
+  </style>
 </head>
 <body class="bg-gray-900 text-white">
   <!-- Header Section -->
-  <header class="text-center py-8">
+  <header class="text-center py-8 fade-in">
     <h1 class="text-4xl font-bold text-purple-400">Welcome to Agungny's Profile</h1>
   </header>
 
   <!-- Main Content -->
   <main class="px-8 py-10">
     <!-- Profile Section -->
-    <section class="text-center mb-10">
+    <section class="text-center mb-10 fade-in">
       <div class="w-40 h-40 mx-auto rounded-full overflow-hidden border-4 border-purple-500">
         <img src="https://files.catbox.moe/0nyzhh.jpg" alt="Profile Image" class="w-full h-full object-cover">
       </div>
@@ -29,7 +54,7 @@
     </section>
     
     <!-- Personal Information -->
-    <section class="mb-10">
+    <section class="mb-10 fade-in">
       <h2 class="text-2xl font-semibold flex items-center justify-center text-purple-400 mb-4">
         <i class="fas fa-user-circle mr-2"></i> Personal Information
       </h2>
@@ -41,7 +66,7 @@
     </section>
 
     <!-- Coding Skills -->
-    <section class="mb-10">
+    <section class="mb-10 fade-in">
       <h2 class="text-2xl font-semibold flex items-center justify-center text-purple-400 mb-4">
         <i class="fas fa-laptop-code mr-2"></i> Coding Skills
       </h2>
@@ -68,7 +93,7 @@
     </section>
 
     <!-- Information Section -->
-    <section class="mb-10">
+    <section class="mb-10 fade-in">
       <h2 class="text-2xl font-semibold flex items-center justify-center text-purple-400 mb-4">
         <i class="fas fa-info-circle mr-2"></i> Information
       </h2>
@@ -82,7 +107,7 @@
   </main>
 
   <!-- TQTO Section -->
-  <section class="mb-10">
+  <section class="mb-10 fade-in">
     <h2 class="text-2xl font-semibold flex items-center justify-center text-purple-400 mb-4">
       <i class="fas fa-thumbs-up mr-2"></i> Special Thanks To
     </h2>
