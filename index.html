@@ -8,29 +8,36 @@
   <title>Profile - Agungny</title>
 </head>
 <body class="bg-gray-900 text-white">
-  <!-- Header Section -->
-  <header class="header-bg text-center py-6 fade-in">
+  <!-- Navigasi Header -->
+  <header class="header-bg text-center py-4 fixed w-full top-0 z-50 shadow-lg">
+    <nav class="flex justify-around">
+      <a href="#profile" class="button-style">Profile</a>
+      <a href="#skills" class="button-style">Skills</a>
+      <a href="#information" class="button-style">Information</a>
+      <a href="#tqto" class="button-style">TQTO</a>
+      <a href="https://wa.me/62881027377047" class="button-style">Contact</a>
+    </nav>
   </header>
 
   <!-- Elemen audio -->
-<audio autoplay loop>
+  <audio autoplay loop class="hidden">
     <source src="https://files.catbox.moe/kahjyc.mp3" type="audio/mpeg">
     Browser Anda tidak mendukung elemen audio.
-</audio>
-  
+  </audio>
+
   <!-- Main Content -->
-  <main class="px-4 py-8">
+  <main class="pt-20 px-4">
     <!-- Profile Section -->
-    <section class="text-center fade-in">
+    <section id="profile" class="text-center fade-in">
       <div class="w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-purple-500">
         <img src="https://files.catbox.moe/0nyzhh.jpg" alt="Profile Image" class="w-full h-full object-cover">
       </div>
       <h2 class="mt-4 text-2xl font-semibold">Agung</h2>
-      <a href="https://wa.me/62881027377047" class="button-style mt-4 mb-4 inline-block">Contact Me</a>
+      <p class="mt-2 text-sm text-gray-400">Web Developer & Bot Enthusiast</p>
     </section>
     
     <!-- Personal Information -->
-    <section class="mt-8">
+    <section id="information" class="mt-8">
       <h2 class="section-title">Personal Information</h2>
       <div class="card fade-in">
         <p>Makan: Setiap Hari</p>
@@ -40,7 +47,7 @@
     </section>
 
     <!-- Coding Skills -->
-    <section class="mt-8">
+    <section id="skills" class="mt-8">
       <h2 class="section-title">Coding Skills</h2>
       <div class="card fade-in">
         <p>JavaScript</p>
@@ -58,11 +65,11 @@
       </div>
     </section>
 
-    <!-- Information Section -->
-    <section class="mt-8">
+    <!-- Additional Information -->
+    <section id="additional-info" class="mt-8">
       <h2 class="section-title">Information</h2>
       <div class="card fade-in">
-        <p>Email: <a href="mailto:harisbima715@gmail.com" class="text-purple-400 hover:underline">Email</a></p>
+        <p>Email: <a href="mailto:harisbima715@gmail.com" class="text-purple-400 hover:underline">harisbima715@gmail.com</a></p>
         <p>Rest Api: <a href="https://api.agungny.my.id" class="text-purple-400 hover:underline">AgungApi</a></p>
         <p>Location: Jawa Timur, Indonesia</p>
         <p>Rest Api Masih Dalam Tahap Pengembangan</p>
@@ -70,33 +77,33 @@
     </section>
   </main>
 
-<!-- TQTO Section -->
-<section class="tqto-section mt-8 fade-in">
-  <h2 class="section-title">Special Thanks To</h2>
-  <div class="tqto-container">
-    <div class="tqto-card">
-      <div class="icon-container">
-        <i class="fas fa-heart"></i>
+  <!-- TQTO Section -->
+  <section id="tqto" class="tqto-section mt-8 fade-in">
+    <h2 class="section-title">Special Thanks To</h2>
+    <div class="tqto-container">
+      <div class="tqto-card">
+        <div class="icon-container">
+          <i class="fas fa-heart"></i>
+        </div>
+        <h3 class="tqto-name gradient-text">My Family</h3>
+        <p class="tqto-desc">For unconditional support and love.</p>
       </div>
-      <h3 class="tqto-name gradient-text">My Family</h3>
-      <p class="tqto-desc">For unconditional support and love.</p>
-    </div>
-    <div class="tqto-card">
-      <div class="icon-container">
-        <i class="fas fa-code"></i>
+      <div class="tqto-card">
+        <div class="icon-container">
+          <i class="fas fa-code"></i>
+        </div>
+        <h3 class="tqto-name gradient-text">Rido & All Team</h3>
+        <p class="tqto-desc">For helping me grow as a developer.</p>
       </div>
-      <h3 class="tqto-name gradient-text">Rido & All Team</h3>
-      <p class="tqto-desc">For helping me grow as a developer.</p>
-    </div>
-    <div class="tqto-card">
-      <div class="icon-container">
-        <i class="fas fa-users"></i>
+      <div class="tqto-card">
+        <div class="icon-container">
+          <i class="fas fa-users"></i>
+        </div>
+        <h3 class="tqto-name gradient-text">Supporters</h3>
+        <p class="tqto-desc">For believing in me and my work.</p>
       </div>
-      <h3 class="tqto-name gradient-text">Supporters</h3>
-      <p class="tqto-desc">For believing in me and my work.</p>
     </div>
-  </div>
-    </section>
+  </section>
 
   <!-- Footer -->
   <footer class="text-center py-4 bg-gray-800 mt-8">
