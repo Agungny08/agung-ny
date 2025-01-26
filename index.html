@@ -5,11 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> <!-- Font Awesome CDN -->
   <title>Profile - Agungny</title>
 </head>
 <body class="bg-gray-900 text-white">
   <!-- Header Section -->
   <header class="header-bg text-center py-6 fade-in">
+    <h1 class="text-3xl font-bold"><i class="fas fa-user-circle"></i> Agungny's Profile</h1>
   </header>
 
   <!-- Main Content -->
@@ -19,33 +21,33 @@
       <div class="w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-purple-500">
         <img src="https://files.catbox.moe/0nyzhh.jpg" alt="Profile Image" class="w-full h-full object-cover">
       </div>
-      <h2 class="mt-4 text-2xl font-semibold">Agung</h2>
-      <a href="https://wa.me/62881027377047" class="button-style mt-4 mb-4 inline-block">Contact Me</a>
+      <h2 class="mt-4 text-2xl font-semibold"><i class="fas fa-user"></i> Agung</h2>
+      <a href="https://wa.me/62881027377047" class="button-style mt-4 mb-4 inline-block"><i class="fab fa-whatsapp"></i> Contact Me</a>
     </section>
     
     <!-- Personal Information -->
     <section class="mt-8">
-      <h2 class="section-title">Personal Information</h2>
+      <h2 class="section-title"><i class="fas fa-info-circle"></i> Personal Information</h2>
       <div class="card fade-in">
-        <p>Makan: Setiap Hari</p>
-        <p>Tidur: Malam Hari</p>
-        <p>Bangun: Pagi Hari</p>
+        <p><i class="fas fa-utensils"></i> Makan: Setiap Hari</p>
+        <p><i class="fas fa-bed"></i> Tidur: Malam Hari</p>
+        <p><i class="fas fa-sun"></i> Bangun: Pagi Hari</p>
       </div>
     </section>
 
     <!-- Coding Skills -->
     <section class="mt-8">
-      <h2 class="section-title">Coding Skills</h2>
+      <h2 class="section-title"><i class="fas fa-laptop-code"></i> Coding Skills</h2>
       <div class="card fade-in">
-        <p>JavaScript</p>
+        <p><i class="fab fa-js-square"></i> JavaScript</p>
         <div class="progress-bar mt-2">
           <div class="progress-fill" style="width: 80%;"></div>
         </div>
-        <p class="mt-4">CSS</p>
+        <p class="mt-4"><i class="fab fa-css3-alt"></i> CSS</p>
         <div class="progress-bar mt-2">
           <div class="progress-fill" style="width: 60%;"></div>
         </div>
-        <p class="mt-4">HTML</p>
+        <p class="mt-4"><i class="fab fa-html5"></i> HTML</p>
         <div class="progress-bar mt-2">
           <div class="progress-fill" style="width: 50%;"></div>
         </div>
@@ -54,47 +56,47 @@
 
     <!-- Information Section -->
     <section class="mt-8">
-      <h2 class="section-title">Information</h2>
+      <h2 class="section-title"><i class="fas fa-link"></i> Information</h2>
       <div class="card fade-in">
-        <p>Email: <a href="mailto:harisbima715@gmail.com" class="text-purple-400 hover:underline">Email</a></p>
-        <p>Rest Api: <a href="https://api.ridoxagung.my.id" class="text-purple-400 hover:underline">AgungApi</a></p>
-        <p>Location: Jawa Timur, Indonesia</p>
-        <p>Rest Api Masih Dalam Tahap Pengembangan</p>
+        <p><i class="fas fa-envelope"></i> Email: <a href="mailto:harisbima715@gmail.com" class="text-purple-400 hover:underline">Email</a></p>
+        <p><i class="fas fa-cogs"></i> Rest Api: <a href="https://api.ridoxagung.my.id" class="text-purple-400 hover:underline">AgungApi</a></p>
+        <p><i class="fas fa-map-marker-alt"></i> Location: Jawa Timur, Indonesia</p>
+        <p><i class="fas fa-tools"></i> Rest Api Masih Dalam Tahap Pengembangan</p>
       </div>
     </section>
   </main>
 
-<!-- TQTO Section -->
-<section class="tqto-section mt-8 fade-in">
-  <h2 class="section-title">Special Thanks To</h2>
-  <div class="tqto-container">
-    <div class="tqto-card">
-      <div class="icon-container">
-        <i class="fas fa-heart"></i>
+  <!-- TQTO Section -->
+  <section class="tqto-section mt-8 fade-in">
+    <h2 class="section-title"><i class="fas fa-thumbs-up"></i> Special Thanks To</h2>
+    <div class="tqto-container">
+      <div class="tqto-card">
+        <div class="icon-container">
+          <i class="fas fa-heart"></i> <!-- Heart Icon -->
+        </div>
+        <h3 class="tqto-name gradient-text">My Family</h3>
+        <p class="tqto-desc">For unconditional support and love.</p>
       </div>
-      <h3 class="tqto-name gradient-text">My Family</h3>
-      <p class="tqto-desc">For unconditional support and love.</p>
-    </div>
-    <div class="tqto-card">
-      <div class="icon-container">
-        <i class="fas fa-code"></i>
+      <div class="tqto-card">
+        <div class="icon-container">
+          <i class="fas fa-code"></i> <!-- Code Icon -->
+        </div>
+        <h3 class="tqto-name gradient-text">Rido & All Team</h3>
+        <p class="tqto-desc">For helping me grow as a developer.</p>
       </div>
-      <h3 class="tqto-name gradient-text">Rido & All Team</h3>
-      <p class="tqto-desc">For helping me grow as a developer.</p>
-    </div>
-    <div class="tqto-card">
-      <div class="icon-container">
-        <i class="fas fa-users"></i>
+      <div class="tqto-card">
+        <div class="icon-container">
+          <i class="fas fa-users"></i> <!-- Users Icon -->
+        </div>
+        <h3 class="tqto-name gradient-text">Supporters</h3>
+        <p class="tqto-desc">For believing in me and my work.</p>
       </div>
-      <h3 class="tqto-name gradient-text">Supporters</h3>
-      <p class="tqto-desc">For believing in me and my work.</p>
     </div>
-  </div>
-    </section>
+  </section>
 
   <!-- Footer -->
   <footer class="text-center py-4 bg-gray-800 mt-8">
-    <p class="text-sm">&copy; 2025 Agungny. All rights reserved.</p>
+    <p class="text-sm">&copy; 2025 Agungny. All rights reserved. <i class="fas fa-copyright"></i></p>
   </footer>
 
   <!-- Loading Bar -->
