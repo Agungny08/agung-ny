@@ -5,13 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="styles.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> <!-- Font Awesome CDN -->
+  <!-- Font Awesome CDN for icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <title>Profile - Agungny</title>
 </head>
 <body class="bg-gray-900 text-white">
   <!-- Header Section -->
   <header class="header-bg text-center py-6 fade-in">
-    <h1 class="text-3xl font-bold"><i class="fas fa-user-circle"></i> Agungny's Profile</h1>
+    <h1 class="text-4xl font-semibold">Welcome to Agungny's Profile</h1>
   </header>
 
   <!-- Main Content -->
@@ -21,33 +22,39 @@
       <div class="w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-purple-500">
         <img src="https://files.catbox.moe/0nyzhh.jpg" alt="Profile Image" class="w-full h-full object-cover">
       </div>
-      <h2 class="mt-4 text-2xl font-semibold"><i class="fas fa-user"></i> Agung</h2>
-      <a href="https://wa.me/62881027377047" class="button-style mt-4 mb-4 inline-block"><i class="fab fa-whatsapp"></i> Contact Me</a>
+      <h2 class="mt-4 text-2xl font-semibold">Agung</h2>
+      <a href="https://wa.me/62881027377047" class="button-style mt-4 mb-4 inline-block">
+        <i class="fas fa-phone-alt mr-2"></i> Contact Me
+      </a>
     </section>
     
     <!-- Personal Information -->
     <section class="mt-8">
-      <h2 class="section-title"><i class="fas fa-info-circle"></i> Personal Information</h2>
+      <h2 class="section-title flex items-center justify-center">
+        <i class="fas fa-user-circle mr-2"></i> Personal Information
+      </h2>
       <div class="card fade-in">
-        <p><i class="fas fa-utensils"></i> Makan: Setiap Hari</p>
-        <p><i class="fas fa-bed"></i> Tidur: Malam Hari</p>
-        <p><i class="fas fa-sun"></i> Bangun: Pagi Hari</p>
+        <p><i class="fas fa-utensils mr-2"></i> Makan: Setiap Hari</p>
+        <p><i class="fas fa-bed mr-2"></i> Tidur: Malam Hari</p>
+        <p><i class="fas fa-sun mr-2"></i> Bangun: Pagi Hari</p>
       </div>
     </section>
 
     <!-- Coding Skills -->
     <section class="mt-8">
-      <h2 class="section-title"><i class="fas fa-laptop-code"></i> Coding Skills</h2>
+      <h2 class="section-title flex items-center justify-center">
+        <i class="fas fa-laptop-code mr-2"></i> Coding Skills
+      </h2>
       <div class="card fade-in">
-        <p><i class="fab fa-js-square"></i> JavaScript</p>
+        <p>JavaScript <i class="fab fa-js-square"></i></p>
         <div class="progress-bar mt-2">
           <div class="progress-fill" style="width: 80%;"></div>
         </div>
-        <p class="mt-4"><i class="fab fa-css3-alt"></i> CSS</p>
+        <p class="mt-4">CSS <i class="fab fa-css3-alt"></i></p>
         <div class="progress-bar mt-2">
           <div class="progress-fill" style="width: 60%;"></div>
         </div>
-        <p class="mt-4"><i class="fab fa-html5"></i> HTML</p>
+        <p class="mt-4">HTML <i class="fab fa-html5"></i></p>
         <div class="progress-bar mt-2">
           <div class="progress-fill" style="width: 50%;"></div>
         </div>
@@ -56,37 +63,41 @@
 
     <!-- Information Section -->
     <section class="mt-8">
-      <h2 class="section-title"><i class="fas fa-link"></i> Information</h2>
+      <h2 class="section-title flex items-center justify-center">
+        <i class="fas fa-info-circle mr-2"></i> Information
+      </h2>
       <div class="card fade-in">
-        <p><i class="fas fa-envelope"></i> Email: <a href="mailto:harisbima715@gmail.com" class="text-purple-400 hover:underline">Email</a></p>
-        <p><i class="fas fa-cogs"></i> Rest Api: <a href="https://api.ridoxagung.my.id" class="text-purple-400 hover:underline">AgungApi</a></p>
-        <p><i class="fas fa-map-marker-alt"></i> Location: Jawa Timur, Indonesia</p>
-        <p><i class="fas fa-tools"></i> Rest Api Masih Dalam Tahap Pengembangan</p>
+        <p>Email: <a href="mailto:harisbima715@gmail.com" class="text-purple-400 hover:underline"><i class="fas fa-envelope mr-2"></i>Email</a></p>
+        <p>Rest Api: <a href="https://api.ridoxagung.my.id" class="text-purple-400 hover:underline"><i class="fas fa-cogs mr-2"></i>AgungApi</a></p>
+        <p><i class="fas fa-map-marker-alt mr-2"></i> Location: Jawa Timur, Indonesia</p>
+        <p><i class="fas fa-wrench mr-2"></i> Rest Api Masih Dalam Tahap Pengembangan</p>
       </div>
     </section>
   </main>
 
   <!-- TQTO Section -->
   <section class="tqto-section mt-8 fade-in">
-    <h2 class="section-title"><i class="fas fa-thumbs-up"></i> Special Thanks To</h2>
+    <h2 class="section-title flex items-center justify-center">
+      <i class="fas fa-thumbs-up mr-2"></i> Special Thanks To
+    </h2>
     <div class="tqto-container">
       <div class="tqto-card">
         <div class="icon-container">
-          <i class="fas fa-heart"></i> <!-- Heart Icon -->
+          <i class="fas fa-heart"></i>
         </div>
         <h3 class="tqto-name gradient-text">My Family</h3>
         <p class="tqto-desc">For unconditional support and love.</p>
       </div>
       <div class="tqto-card">
         <div class="icon-container">
-          <i class="fas fa-code"></i> <!-- Code Icon -->
+          <i class="fas fa-code"></i>
         </div>
         <h3 class="tqto-name gradient-text">Rido & All Team</h3>
         <p class="tqto-desc">For helping me grow as a developer.</p>
       </div>
       <div class="tqto-card">
         <div class="icon-container">
-          <i class="fas fa-users"></i> <!-- Users Icon -->
+          <i class="fas fa-users"></i>
         </div>
         <h3 class="tqto-name gradient-text">Supporters</h3>
         <p class="tqto-desc">For believing in me and my work.</p>
@@ -96,7 +107,7 @@
 
   <!-- Footer -->
   <footer class="text-center py-4 bg-gray-800 mt-8">
-    <p class="text-sm">&copy; 2025 Agungny. All rights reserved. <i class="fas fa-copyright"></i></p>
+    <p class="text-sm">&copy; 2025 Agungny. All rights reserved.</p>
   </footer>
 
   <!-- Loading Bar -->
