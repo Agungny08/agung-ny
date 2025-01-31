@@ -27,12 +27,10 @@
   width: 250px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  position: relative;
-  overflow: hidden;
 }
 
 .tqto-card:hover {
-  transform: translateY(-10px) rotate(3deg);
+  transform: translateY(-10px);
   box-shadow: 0 12px 20px rgba(108, 70, 200, 0.5);
 }
 
@@ -81,165 +79,87 @@
   animation: fadeIn 1.5s ease-in-out;
 }
 
-/* Animated Gradient Background */
-@keyframes gradientAnimation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+
+/* Gradient Text (if not already defined) */
+.gradient-text {
+  background: linear-gradient(90deg, #6a1b9a, #8e24aa, #4a148c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.animated-gradient-bg {
-  background: linear-gradient(135deg, #6a1b9a, #8e24aa, #4a148c);
-  background-size: 200% 200%;
-  animation: gradientAnimation 5s infinite ease-in-out;
+/* Header Background */
+.header-bg {
+  background: linear-gradient(135deg, #4a148c, #8e24aa, #6a1b9a);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Particle Animation */
-@keyframes particleAnimation {
-  0% {
-    transform: translateY(0) translateX(0) scale(0);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(-100px) translateX(50px) scale(1);
-    opacity: 0;
-  }
+/* Button Style */
+.button-style {
+  background: linear-gradient(90deg, #6a1b9a, #8e24aa);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.particle {
-  position: absolute;
-  width: 10px;
+.button-style:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(108, 70, 200, 0.5);
+}
+
+/* Card Style */
+.card {
+  background: #2a2a2a;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Progress Bar */
+.progress-bar {
   height: 10px;
-  background: rgba(255, 255, 255, 0.7);
-  border-radius: 50%;
-  animation: particleAnimation 2s infinite ease-out;
+  border-radius: 5px;
+  background: #4a148c;
+  overflow: hidden;
 }
 
-.tqto-card::before,
-.tqto-card::after {
-  content: '';
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  background: rgba(255, 255, 255, 0.7);
-  border-radius: 50%;
-  animation: particleAnimation 2s infinite ease-out;
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #6a1b9a, #8e24aa);
+  animation: fillProgress 2s ease-in-out;
 }
 
-.tqto-card::before {
-  top: 10%;
-  left: 20%;
-}
-
-.tqto-card::after {
-  top: 30%;
-  right: 20%;
-}
-
-/* Blinking Text Animation */
-@keyframes blink {
-  0%, 50%, 100% {
-    opacity: 1;
+@keyframes fillProgress {
+  from {
+    width: 0%;
   }
-  25%, 75% {
-    opacity: 0;
+  to {
+    width: 100%;
   }
 }
 
-.blinking-text {
-  animation: blink 2s infinite;
+/* Loading Bar */
+.loading-bar-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #ddd;
+  z-index: 9999;
 }
 
-/* Loading Spinner */
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+.loading-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #6a1b9a, #8e24aa);
+  animation: loadingAnimation 2s infinite;
 }
 
-.loading-spinner {
-  border: 4px solid rgba(255, 255, 255, 0.3);
-  border-top: 4px solid #8e24aa;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  animation: spin 1s linear infinite;
-}
-
-/* Card Flip Animation */
-@keyframes flip {
-  0% {
-    transform: perspective(600px) rotateY(0);
-  }
-  50% {
-    transform: perspective(600px) rotateY(180deg);
-  }
-  100% {
-    transform: perspective(600px) rotateY(360deg);
-  }
-}
-
-.flip-card {
-  animation: flip 3s infinite;
-}
-
-/* Parallax Background */
-.parallax-bg {
-  background-image: url('your-image.jpg');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-}
-
-/* Text Shadow Animation */
-@keyframes textShadow {
-  0% {
-    text-shadow: 0 0 10px rgba(108, 70, 200, 0.5);
-  }
-  50% {
-    text-shadow: 0 0 20px rgba(108, 70, 200, 0.8);
-  }
-  100% {
-    text-shadow: 0 0 10px rgba(108, 70, 200, 0.5);
-  }
-}
-
-.text-shadow-animation {
-  animation: textShadow 3s infinite;
-}
-
-/* Border Glow Animation */
-@keyframes borderGlow {
-  0% {
-    border-color: #6a1b9a;
-  }
-  50% {
-    border-color: #8e24aa;
-  }
-  100% {
-    border-color: #6a1b9a;
-  }
-}
-
-.border-glow {
-  border: 2px solid #6a1b9a;
-  animation: borderGlow 3s infinite;
-}
-
-/* Smooth Scroll Behavior */
-html {
-  scroll-behavior: smooth;
+@keyframes loadingAnimation {
+  0% { width: 0%; }
+  50% { width: 50%; }
+  100% { width: 100%; }
 }
 
 /* Section Title */
@@ -260,4 +180,20 @@ html {
   background: linear-gradient(90deg, #6a1b9a, #8e24aa);
   margin: 10px auto;
   border-radius: 2px;
+}
+
+/* Smooth Fade-in Animation */
+.fade-in {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
