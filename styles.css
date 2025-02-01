@@ -139,9 +139,15 @@
 
 /* Particles.js Container */
 #particles-js {
-  position: absolute;
+  position: fixed; /* Menggunakan fixed agar partikel tetap di tempat */
   width: 100%;
   height: 100%;
   background: #1a1a1a;
   z-index: 0;
+}
+
+/* Ensure main content is scrollable */
+main {
+  overflow-y: auto; /* Memungkinkan konten utama untuk di-scroll */
+  height: 100vh; /* Mengisi tinggi viewport */
 }
