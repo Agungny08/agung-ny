@@ -1,160 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Profile - Agungny</title>
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Font Awesome CDN for icons -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <title>Agungny - Profile</title>
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <!-- Google Fonts - Enhanced horror fonts selection -->
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Nosifer&family=Eater&family=Poppins:wght@300;400;500;600;700&family=Butcherman&family=Opacity+One&display=swap" rel="stylesheet">
+ <link href="styles.css" rel="stylesheet" />
+  
 </head>
+<body>
+  <!-- Background Elements -->
+  <div class="halloween-bg">
+    <div class="moon"></div>
+  </div>
 
-<body class="bg-gray-900 text-white">
-
-  <!-- Animated Particles Background -->
-  <div id="particles-js" class="fixed inset-0 z-0"></div>
-
-  <!-- Main Content -->
-  <main class="relative z-10 px-4 py-8 md:px-8">
-
-    <!-- Header Section -->
-    <header class="text-center py-8 fade-in">
-      <h1 class="text-4xl font-bold gradient-text">Agungny Profile</h1>
+  <div class="container">
+    <!-- Profile Header -->
+    <header class="profile-header">
+      <h1 class="profile-title">Agungny Profile</h1>
+      <div class="profile-image-container">
+        <img src="https://files.catbox.moe/0nyzhh.jpg" alt="Profile Image" class="profile-image">
+      </div>
+      <h2 class="profile-name">Agung</h2>
+      <p class="profile-subtitle">Bukan Developer</p>
+      <a href="https://wa.me/62881027377047" class="contact-btn">
+        <i class="fas fa-ghost"></i> Summon Me
+      </a>
     </header>
 
-    <!-- Profile Section -->
-    <section class="text-center mb-10 fade-in">
-      <div class="w-40 h-40 mx-auto rounded-full overflow-hidden border-4 border-purple-500 glow-effect">
-        <img src="https://files.catbox.moe/0nyzhh.jpg" alt="Profile Image" class="w-full h-full object-cover">
-      </div>
-      <h2 class="mt-4 text-3xl font-semibold text-purple-300">Agung</h2>
-      <a href="https://wa.me/62881027377047" class="inline-block mt-4 px-6 py-2 rounded-lg text-lg button-style pulse-effect">
-        <i class="fas fa-phone-alt mr-2"></i> Contact Me
-      </a>
-    </section>
-
-    <!-- Personal Information Section -->
-    <section class="mb-10 fade-in">
-      <h2 class="text-2xl font-semibold text-center text-purple-400 mb-4">
-        <i class="fas fa-user-circle mr-2"></i> Personal Information
+    <!-- Daily Schedule Section -->
+    <section class="section">
+      <h2 class="section-title">
+        <i class="fas fa-calendar-alt"></i> Haunting Schedule
       </h2>
-      <div class="bg-gray-800 p-6 rounded-lg shadow-md card neon-border max-w-md mx-auto">
-        <p class="flex items-center"><i class="fas fa-utensils mr-2 text-purple-300"></i> Makan: Setiap Hari</p>
-        <p class="flex items-center mt-2"><i class="fas fa-bed mr-2 text-purple-300"></i> Tidur: Malam Hari</p>
-        <p class="flex items-center mt-2"><i class="fas fa-sun mr-2 text-purple-300"></i> Bangun: Pagi Hari</p>
-      </div>
-    </section>
-
-    <!-- Coding Skills Section -->
-    <section class="mb-10 fade-in">
-      <h2 class="text-2xl font-semibold text-center text-purple-400 mb-4">
-        <i class="fas fa-laptop-code mr-2"></i> Coding Skills
-      </h2>
-      <div class="bg-gray-800 p-6 rounded-lg shadow-md card neon-border max-w-md mx-auto">
-        <p class="flex items-center justify-between">
-          JavaScript <i class="fab fa-js-square text-yellow-400"></i>
-        </p>
-        <div class="progress-bar mt-2">
-          <div class="progress-fill" style="width: 80%;"></div>
-        </div>
-        <p class="flex items-center justify-between mt-4">
-          CSS <i class="fab fa-css3-alt text-blue-400"></i>
-        </p>
-        <div class="progress-bar mt-2">
-          <div class="progress-fill" style="width: 60%;"></div>
-        </div>
-        <p class="flex items-center justify-between mt-4">
-          HTML <i class="fab fa-html5 text-orange-400"></i>
-        </p>
-        <div class="progress-bar mt-2">
-          <div class="progress-fill" style="width: 50%;"></div>
-        </div>
+      <div class="card">
+        <ul class="info-list">
+          <li class="info-item">
+            <div class="info-icon">
+              <i class="fas fa-utensils"></i>
+            </div>
+            <span class="info-label">Makan</span>
+            <span class="info-value">Setiap Hari</span>
+          </li>
+          <li class="info-item">
+            <div class="info-icon">
+              <i class="fas fa-moon"></i>
+            </div>
+            <span class="info-label">Tidur</span>
+            <span class="info-value">Malam Hari</span>
+          </li>
+          <li class="info-item">
+            <div class="info-icon">
+              <i class="fas fa-sun"></i>
+            </div>
+            <span class="info-label">Bangun</span>
+            <span class="info-value">Pagi Hari</span>
+          </li>
+        </ul>
       </div>
     </section>
 
-    <!-- Information Section -->
-    <section class="mb-10 fade-in">
-      <h2 class="text-2xl font-semibold text-center text-purple-400 mb-4">
-        <i class="fas fa-info-circle mr-2"></i> Information
+    <!-- Skills Section -->
+    <section class="section">
+      <h2 class="section-title">
+        <i class="fas fa-hat-wizard"></i> Mystical Skills
       </h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Email -->
-        <a href="mailto:harisbima715@gmail.com" class="flex items-center bg-gray-800 p-4 rounded-lg shadow-md transition-transform transform hover:scale-105 card glow-effect">
-          <i class="fas fa-envelope text-purple-300 text-3xl mr-4"></i>
-          <div>
-            <p class="text-lg font-semibold text-purple-300">Email</p>
-            <p class="text-sm text-gray-400">Click To My Email</p>
+      <div class="card">
+        <div class="skill-item">
+          <div class="skill-header">
+            <div class="skill-name">
+              <i class="fab fa-js-square skill-icon" style="color: #f7df1e;"></i>
+              JavaScript
+            </div>
+            <div class="skill-percentage">80%</div>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="--progress-width: 80%;"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header">
+            <div class="skill-name">
+              <i class="fab fa-css3-alt skill-icon" style="color: #264de4;"></i>
+              CSS
+            </div>
+            <div class="skill-percentage">40%</div>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="--progress-width: 40%;"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header">
+            <div class="skill-name">
+              <i class="fab fa-html5 skill-icon" style="color: #e34c26;"></i>
+              HTML
+            </div>
+            <div class="skill-percentage">50%</div>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="--progress-width: 50%;"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+      <h2 class="section-title">
+        <i class="fas fa-skull"></i> Communication Portals
+      </h2>
+      <div class="grid">
+        <a href="mailto:harisbima715@gmail.com" class="card contact-card">
+          <div class="contact-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="contact-text">
+            <h3>Email</h3>
+            <p>Send a Digital Message</p>
           </div>
         </a>
-
-        <!-- Rest API -->
-        <a href="https://api.agungny.my.id" class="flex items-center bg-gray-800 p-4 rounded-lg shadow-md transition-transform transform hover:scale-105 card glow-effect">
-          <i class="fas fa-laptop-code text-purple-300 text-3xl mr-4"></i>
-          <div>
-            <p class="text-lg font-semibold text-purple-300">Rest API</p>
-            <p class="text-sm text-gray-400">Click To My Rest API</p>
+        <a href="https://api.agungny.my.id" class="card contact-card">
+          <div class="contact-icon">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <div class="contact-text">
+            <h3>Rest API</h3>
+            <p>Digital Spellbook</p>
           </div>
         </a>
-
-        <!-- WhatsApp Group -->
-        <a href="https://chat.whatsapp.com/Ds2KpajGHexBrgSuLo4xku" class="flex items-center bg-gray-800 p-4 rounded-lg shadow-md transition-transform transform hover:scale-105 card glow-effect">
-          <i class="fab fa-whatsapp text-purple-300 text-3xl mr-4"></i>
-          <div>
-            <p class="text-lg font-semibold text-purple-300">WhatsApp Group</p>
-            <p class="text-sm text-gray-400">Click To My Group Bot</p>
+        <a href="https://chat.whatsapp.com/Ds2KpajGHexBrgSuLo4xku" class="card contact-card">
+          <div class="contact-icon">
+            <i class="fab fa-whatsapp"></i>
+          </div>
+          <div class="contact-text">
+            <h3>WhatsApp Group</h3>
+            <p>Join the Ghost Circle</p>
           </div>
         </a>
       </div>
     </section>
 
     <!-- Special Thanks Section -->
-    <section class="mb-10 fade-in">
-      <h2 class="text-2xl font-semibold text-center text-purple-400 mb-4">
-        <i class="fas fa-thumbs-up mr-2"></i> Special Thanks To
+    <section class="section">
+      <h2 class="section-title">
+        <i class="fas fa-magic"></i> Supernatural Allies
       </h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="bg-gray-800 p-6 rounded-lg shadow-md text-center card neon-border">
-          <div class="text-3xl text-red-500 mb-4">
-            <i class="fas fa-heart pulse-effect"></i>
+      <div class="grid">
+        <div class="card">
+          <div style="text-align: center; margin-bottom: 20px;">
+            <i class="fas fa-heart" style="font-size: 2.5rem; color: #ff5252;"></i>
           </div>
-          <h3 class="text-xl font-semibold text-purple-300">My Family</h3>
-          <p class="text-gray-400">For unconditional support and love.</p>
+          <h3 style="text-align: center; margin-bottom: 10px;">My Family</h3>
+          <p style="text-align: center; color: var(--text-secondary);">For unconditional support and love.</p>
         </div>
-        <div class="bg-gray-800 p-6 rounded-lg shadow-md text-center card neon-border">
-          <div class="text-3xl text-green-500 mb-4">
-            <i class="fas fa-code rotate-effect"></i>
+        <div class="card">
+          <div style="text-align: center; margin-bottom: 20px;">
+            <i class="fas fa-code" style="font-size: 2.5rem; color: #4caf50;"></i>
           </div>
-          <h3 class="text-xl font-semibold text-purple-300">Rido & All Team</h3>
-          <p class="text-gray-400">For helping me grow as a developer.</p>
+          <h3 style="text-align: center; margin-bottom: 10px;">Rido & All Team</h3>
+          <p style="text-align: center; color: var(--text-secondary);">For helping me grow as a developer.</p>
         </div>
-        <div class="bg-gray-800 p-6 rounded-lg shadow-md text-center card neon-border">
-          <div class="text-3xl text-blue-500 mb-4">
-            <i class="fas fa-users bounce-effect"></i>
+        <div class="card">
+          <div style="text-align: center; margin-bottom: 20px;">
+            <i class="fas fa-users" style="font-size: 2.5rem; color: #2196f3;"></i>
           </div>
-          <h3 class="text-xl font-semibold text-purple-300">Supporters</h3>
-          <p class="text-gray-400">For believing in me and my work.</p>
+          <h3 style="text-align: center; margin-bottom: 10px;">Supporters</h3>
+          <p style="text-align: center; color: var(--text-secondary);">For believing in me and my work.</p>
         </div>
       </div>
     </section>
+  </div>
 
-  </main>
+  <!-- Ghost Effect -->
+  <div class="ghost" id="ghost"></div>
 
   <!-- Footer -->
-  <footer class="text-center py-6 bg-gray-800 relative z-10">
-    <p class="text-sm text-gray-400">&copy; 2025 Agungny. All rights reserved.</p>
+  <footer class="footer">
+    <p class="footer-text">&copy; 2025 <span class="footer-brand">Agungny</span>. All Rights Reserved.</p>
   </footer>
 
-  <!-- Particles.js Library -->
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <script>
-    particlesJS.load('particles-js', 'particles.json', function() {
-      console.log('Particles.js loaded!');
-    });
-  </script>
+  <!-- Simple Animation Script - No Dependencies -->
+ <script src="script.js"></script>
 </body>
-
-          </html>
+  </html>
